@@ -1,12 +1,10 @@
 const consts = {
-    mongoString: 'mongodb://pablo:pablo2q@ds245022.mlab.com:45022/auth4',
-    secretString: 'secret blah blah',
+    mongoString: process.env.DB_CONN_STR_QA2,
+    secretString: process.env.SECRET_KEY,
 
-    apiUrl: 'http://localhost:9999',//'http://localhost:9011',
-    // apiUrl: 'https://authtemplate.herokuapp.com/',
+    apiUrl: 'https://auth04.herokuapp.com/',
 
-    frontUrl: 'http://localhost:4200',
-    // frontUrl: 'http://pablodev.pl',
+    frontUrl: 'http://pablodev.pl',
 
     port: 9999,
     wsPort: 5555
