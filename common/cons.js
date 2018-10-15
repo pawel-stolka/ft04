@@ -2,7 +2,7 @@ const consts = {
     mongoString: process.env.DB_CONN_STR_QA2,
     secretString: process.env.SECRET_KEY,
 
-    apiUrl: 'https://auth04.herokuapp.com/',
+    apiUrl: 'https://auth04.herokuapp.com',
 
     frontUrl: 'http://pablodev.pl',
 
