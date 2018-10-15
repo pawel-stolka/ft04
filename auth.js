@@ -1,5 +1,5 @@
 var User = require('./models/User'),
-    
+    Message = require('./models/Message'),
     jwt = require('jwt-simple'),
     bcrypt = require('bcrypt-nodejs'),
     express = require('express'),
