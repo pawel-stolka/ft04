@@ -10,7 +10,7 @@ var express = require('express'),
 
 var app = express(),
     port = process.env.PORT || CONS.consts.port,
-    wsPort = CONS.consts.wsPort,
+    wsPort = process.env.PORT || CONS.consts.wsPort,
     mongoString = CONS.consts.mongoString
 
 
