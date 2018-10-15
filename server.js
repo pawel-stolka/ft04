@@ -32,13 +32,13 @@ app.get('/', (req, res) => {
     res.send('hi! Auth4 is working great!')
 })
 
-app.get('/dbInfo', async (req, res) => {
-    let _name = mongoString.split('/'),
-        dbName = _name[_name.length - 1]
-    res.send({
-        db: dbName
-    })
-})
+// app.get('/dbInfo', async (req, res) => {
+//     let _name = mongoString.split('/'),
+//         dbName = _name[_name.length - 1]
+//     res.send({
+//         db: dbName
+//     })
+// })
 
 app.get('/users', async (req, res) => {
     try {
@@ -58,10 +58,11 @@ app.use('/auth', auth.router)
 
 // -------------------- MONGOOSE & SERVER --------------
 mongoose.connect(mongoString, (err) => {
-    let _name = mongoString.split('/'),
-        dbName = _name[_name.length - 1]
+    // let _name = mongoString.split('/'),
+    //     dbName = _name[_name.length - 1]
     if (!err)
-        console.log(` ===> connected to: ${dbName} <===`)
+        console.log(` ===> connected to mongo`)
+        // console.log(` ===> connected to: ${dbName} <===`)
 })
 
 
